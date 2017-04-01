@@ -135,14 +135,13 @@ namespace testIgnite
                 BinaryConfiguration = new BinaryConfiguration(typeof (TestObject))
             };
 
-            //Console.WriteLine(cfg.ToXml());
             using (var ignite = Ignition.Start(cfg))
             {
                 var cacheCfg = new CacheConfiguration
                 {
                     ReadThrough = true,
                     WriteThrough = true,
-                    KeepBinaryInStore = false,  // Depends on your case
+                    KeepBinaryInStore = false, 
                     CacheStoreFactory = new OracleStoreFactory()
                 };
 
