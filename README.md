@@ -3,7 +3,9 @@ Example of how to configure apache ignite .NET with an oracle database 12c in re
 
 
 Ignite 1.9
+
 Oracle 12c
+
 .Net Framework 4.5
 
 Example Table
